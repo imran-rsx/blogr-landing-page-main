@@ -1,0 +1,27 @@
+@mixin flexdesign {
+    display: flex;
+    justify-content: space-between;
+}
+@mixin ul-li {
+    display: flex;
+    justify-content:space-between;
+    list-style: none;
+}
+$lightred:hsl(356, 100%, 66%);
+$verylightred:hsl(355, 100%, 74%);
+$verydarkblue:hsl(208, 49%, 24%);
+$ctabtn:hsl(355, 100%, 74%);
+$fotter:     hsl(237, 17%, 21%);
+.conteiner{
+    width: 1140px;
+    margin: auto;
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+

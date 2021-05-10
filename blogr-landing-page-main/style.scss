@@ -1,0 +1,190 @@
+@import 'global';
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Ubuntu;
+}
+header{
+    height: 60vh;
+    // background:$lightred;
+    background-image:url("images/bg-pattern-intro.svg"), linear-gradient(to left,$lightred,$verylightred);
+    background-position: right ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-bottom-left-radius: 100px;
+
+    .hero{
+        padding-top: 60px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% ,-50%);
+        text-align: center;
+        ul{
+            @include ul-li;
+            padding: 30px 90px;
+            li{
+                background: white;
+                padding: 10px 15px;
+                border-radius: 30px;
+                &:hover{
+                    background:hsl(356, 100%, 66%);
+
+                }
+                &:last-child{
+                    padding: 10px 25px;
+                    margin-left: 10px;
+                }
+            }
+        }
+        
+    }
+
+
+    main{
+       display: flex;
+       justify-content: space-between;
+       padding: 10px 0px;
+       align-items: center;
+       .sign a{
+           text-decoration: none;
+           color: inherit;
+       }
+       img{
+           height: 35px;
+       }
+       ul{
+          display: flex;
+          list-style: none;
+          li{
+              background: transparent;
+              padding: 10px 15px;
+                 &:hover{
+                      display: block;
+                      cursor: pointer;
+                  }
+              .sub-connect{
+                  flex-direction: column;
+                  display: block;
+                  margin-right: 0px;
+                  background: white;
+                  display: none;
+               
+                 
+              }
+          }
+       }
+        .cta-btn ul li.sign:last-child{
+            padding: 10px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            
+            &:hover{
+                background: $ctabtn;
+                cursor: pointer;
+                display: block;
+            }
+        }
+    }
+}
+section.first{
+       .middle{
+           text-align: center;
+       }
+    margin-top: 80px;
+ 
+    .grid-component{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        
+        img{
+            height: 600px;
+            margin-top: -60px;
+        }
+      
+        .text-left{
+            padding-right: 60px;
+            padding-top: 100px;
+        }
+    }
+}
+.second{
+    position: relative;
+   background: $verydarkblue;
+   border-bottom-left-radius:100px ;
+   border-top-right-radius:100px ;
+   height: 300px;
+   .left-two{
+     img{
+         height: 400px;
+         position: absolute;
+         top: -65px;
+     }
+     .right-two{
+         .two-txt{
+                padding: 100px 20px;
+         }
+     }
+   }
+   .grid-component-two{
+       display: grid;
+       grid-template-columns: 50% 50%;
+   }
+}
+.two-txt {
+    padding: 86px 71px;
+    color: white;
+}
+.three{
+    margin-top: 0px;
+    padding: 0px;
+    .conteiner{
+        padding: 192px 0;
+    }
+    .grid-component-three{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        .right-three{
+            padding: 15px 100px;
+        }
+        .left-three{
+            position: relative;
+            img{
+                position: absolute;
+                top: -140px;
+                left: -200px;
+                height: 600px;
+        } 
+        }
+       
+    }
+}
+.four{
+    background: $fotter;
+    padding:50px 10px;
+    border-top-right-radius: 100px;
+    .grid-four{
+        a{
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        p{
+            padding: 2px;
+            margin: 0px;
+       
+        }
+        
+        color: hsl(240, 2%, 79%);
+        // ul{
+        //     list-style: none;
+        // }
+        display: grid;
+        grid-template-columns: 285px 285px 285px 285px;
+    }
+}

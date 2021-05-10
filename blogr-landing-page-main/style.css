@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap");
+.conteiner {
+  width: 1140px;
+  margin: auto;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Ubuntu;
+}
+
+header {
+  height: 60vh;
+  background-image: url("images/bg-pattern-intro.svg"), -webkit-gradient(linear, right top, left top, from(#ff525d), to(#ff7a85));
+  background-image: url("images/bg-pattern-intro.svg"), linear-gradient(to left, #ff525d, #ff7a85);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-bottom-left-radius: 100px;
+}
+header .hero {
+  padding-top: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+header .hero ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  padding: 30px 90px;
+}
+header .hero ul li {
+  background: white;
+  padding: 10px 15px;
+  border-radius: 30px;
+}
+header .hero ul li:hover {
+  background: #ff525d;
+}
+header .hero ul li:last-child {
+  padding: 10px 25px;
+  margin-left: 10px;
+}
+header main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header main .sign a {
+  text-decoration: none;
+  color: inherit;
+}
+header main img {
+  height: 35px;
+}
+header main ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+header main ul li {
+  background: transparent;
+  padding: 10px 15px;
+}
+header main ul li:hover {
+  display: block;
+  cursor: pointer;
+}
+header main ul li .sub-connect {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: block;
+  margin-right: 0px;
+  background: white;
+  display: none;
+}
+header main .cta-btn ul li.sign:last-child {
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+}
+header main .cta-btn ul li.sign:last-child:hover {
+  background: #ff7a85;
+  cursor: pointer;
+  display: block;
+}
+
+section.first {
+  margin-top: 80px;
+}
+section.first .middle {
+  text-align: center;
+}
+section.first .grid-component {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+section.first .grid-component img {
+  height: 600px;
+  margin-top: -60px;
+}
+section.first .grid-component .text-left {
+  padding-right: 60px;
+  padding-top: 100px;
+}
+
+.second {
+  position: relative;
+  background: #1f3f5b;
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
+  height: 300px;
+}
+.second .left-two img {
+  height: 400px;
+  position: absolute;
+  top: -65px;
+}
+.second .left-two .right-two .two-txt {
+  padding: 100px 20px;
+}
+.second .grid-component-two {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.two-txt {
+  padding: 86px 71px;
+  color: white;
+}
+
+.three {
+  margin-top: 0px;
+  padding: 0px;
+}
+.three .conteiner {
+  padding: 192px 0;
+}
+.three .grid-component-three {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.three .grid-component-three .right-three {
+  padding: 15px 100px;
+}
+.three .grid-component-three .left-three {
+  position: relative;
+}
+.three .grid-component-three .left-three img {
+  position: absolute;
+  top: -140px;
+  left: -200px;
+  height: 600px;
+}
+
+.four {
+  background: #2c2d3f;
+  padding: 50px 10px;
+  border-top-right-radius: 100px;
+}
+.four .grid-four {
+  color: #c8c8cb;
+  display: grid;
+  grid-template-columns: 285px 285px 285px 285px;
+}
+.four .grid-four a {
+  color: #fff;
+  text-decoration: none;
+}
+.four .grid-four p {
+  padding: 2px;
+  margin: 0px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,13 @@
+.conteiner {
+  width: 1140px;
+  margin: auto;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}/*# sourceMappingURL=global.css.map */
